@@ -1,2 +1,1 @@
-Ml
-==
+Scripts for ML assignments
