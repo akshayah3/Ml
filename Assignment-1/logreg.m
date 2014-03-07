@@ -8,8 +8,8 @@ clear ; close all; clc
 %  contains the label.
 
 data = load('schooldata.txt');
-%%%%______ q1. Transfer 1st 2 columns of data into variable X  (1 mark)
-%%%%______ q2. Transfer 3rd column of data into variable  y    (1 mark)
+X = vertcat(data(1:100), data(101,200));
+y = data(201:300);
 
 %% ==================== Part 1: Plotting ====================
 %  We start the exercise by first plotting the data to understand the problem we are working with.
