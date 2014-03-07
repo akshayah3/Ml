@@ -23,8 +23,9 @@ grad = zeros(size(theta));
 
 
 for i=1:m
-	%%%%%_______ q6. Fill in code here (5 marks).
-end
+    a = transpose(X(:,i)*theta);
+	cost = (y(i)*logmoid(a(:,1))- (1-y(i))*(logmoid(1-a(:,1))));
+    J = cost;
 J=-J/m
 
 
