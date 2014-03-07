@@ -37,10 +37,12 @@ pause;
 %  In this part of the exercise, you will calculate the cost and gradient for logistic regression.
 
 %  Setup the data matrix appropriately, and add ones for the intercept term
-%%%%______ q4. Define two variables 'm' and 'n' as the number of training examples and the number of features respectively. (1 mark)
 
-%%%%______ q5. Add a column of 1s to the imput matrix X (1 mark)
-
+m = 100;
+n = 2;
+a =[];
+a(1:100) = 1;
+X.vercat(a);
 % Initialize fitting parameters.
 initial_theta = zeros(n + 1, 1);
 
