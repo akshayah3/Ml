@@ -11,6 +11,7 @@ m = length(y); % number of training examples
 J = 0;
 grad = zeros(size(theta));
 
+
 % ====================== YOUR CODE HERE ======================
 % Instructions: Compute the cost of a particular choice of theta.
 %               You should set J to the cost.
@@ -24,17 +25,19 @@ grad = zeros(size(theta));
 
 for i=1:m
     a = transpose(X(:,i)*theta);
-	cost = (y(i)*logmoid(a(:,1))- (1-y(i))*(logmoid(1-a(:,1))));
+	cost = (y(i)*logsig(a(:,1))- (1-y(i))*(logsig(1-a(:,1))));
     J = cost;
-J=-J/m
+end
+J=-J/m;
 
 
 
 for j=1:size(grad)
 	for i=1:m
-	%%%%%_______ q7. Fill in code here (7 marks).
+    grad(j) =(y(i)*logsig(a(:,1))- (1-y(i))*(logsig(1-a(:,1))))*X(j,i);    
+	theta(j) = theta(j) - grad(j);
 	end
-	grad(j)=grad(j)/m
+	grad(j)=grad(j)/m;
 end
 % =============================================================
 
