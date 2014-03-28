@@ -1,1 +1,1 @@
-Scripts for Coursera ML assignments
+Scripts for Coursera ML assignments in matlab
