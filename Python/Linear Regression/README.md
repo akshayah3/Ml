@@ -1,1 +1,1 @@
-Scripts for Coursera ML assignments in matlab and python
+Linear Regression in python.
