@@ -1,1 +1,1 @@
-Scripts for ML assignments
+Scripts for Coursera ML assignments
